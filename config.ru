@@ -47,6 +47,7 @@ class App
           bumped = true
         else
           error = "Unexpected seq #{req_client_seq} was expecting #{client.seq}"
+          STDERR.puts error
         end
       end
     end
